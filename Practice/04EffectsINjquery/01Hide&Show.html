@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in JQuery</title>
+</head>
+<style>
+    /* .box {
+        border: 1px solid rebeccapurple;
+        text-align: center;
+        margin: 20px;
+        font-size: 50px;
+
+    } */
+
+    button {
+        background-color: antiquewhite;
+        padding: 20px;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <h1>Selectors In Jquery</h1>
+    <div class="box">Hello !!!!!!!!!</div>
+    <button class="hd">HIde</button>
+    <button class="sh">SHow</button>
+    <button class="tg">TOggle</button>
+    
+<!-- hide,show & toggle are functions -->
+
+    <script>
+        $(document).ready(function () {
+            $(".box").css({
+                border:" 1px solid rebeccapurple",
+                textAlign: "center",
+            margin: "20px",
+            fontSize: "50px",
+            backgroundColor :"red"
+        })
+        })
+
+
+        $(document).ready(function () {
+            // hide
+
+            $(".hd").click(function () {
+                $(".box").hide();
+                console.log("box hide");
+
+            })
+            // show
+
+            $(".sh").click(function () {
+                $(".box").show();
+                console.log("SHow the Box");
+
+            })
+
+
+
+            // toogle
+            $(".tg").click(function(){
+                $(".box").toggle();
+                console.log("toggled");
+            })
+
+
+
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

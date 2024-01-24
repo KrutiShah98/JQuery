@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS IN JQUERY</title>
+</head>
+<body>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <h1>CSS IN JQUERY</h1>
+    <button>CLick me For Color Change</button>
+
+    <script>
+        $(document).click(function(){
+
+            //METHOD---1
+            
+            // $("button").css('color','red')
+
+
+            //METHOD---2
+
+            // $("button").css({
+            //     'color':'purple',
+            //     'backgroundColor':'yellow',
+            //     'fontSize':'30px'
+            // })
+
+            //METHOD---3
+
+            $("body").css({
+                backgroundColor:"black",
+                color:"orange",
+                fontSize:"40px"
+                
+            })
+        })
+
+    </script>
+
+    
+</body>
+</html>

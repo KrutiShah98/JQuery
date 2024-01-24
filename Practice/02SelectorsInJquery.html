@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in Jquery</title>
+</head>
+
+<body>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <h1>Selectors in Jquery</h1>
+    <button> Element Selector</button>
+    <p class="cls">Class Selector</p>
+    <h1 id="#idselec">Id Selector</h1>
+    <p>Universal Selector</p>
+
+    <script>
+        $(document).ready(function () {
+
+            // ELEMENT SELECTOR
+
+            $('button').click(function () {
+                document.write("This is Element Selector")
+            })
+
+            // CLASS SELECTOR
+            $('.cls').click(function () {
+                document.write("This is Class Selector")
+            })
+
+// DOubt
+
+            // ID SELECTOR
+            $("#idselec").click(function () {
+                document.write("This is ID selector")
+            })
+
+
+            //UNIVERSAL SELECTOR
+            $("*").click(function () {
+                document.write("This is universal selector")
+            })
+
+
+
+        })
+
+    </script>
+</body>
+
+</html>
